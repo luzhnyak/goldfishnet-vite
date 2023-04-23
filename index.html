@@ -4,82 +4,755 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/goldfishnet/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
+    <title>GoldFishNet</title>
     
     <script type="module" crossorigin src="/goldfishnet/assets/index-fac82e35.js"></script>
-    <link rel="stylesheet" href="/goldfishnet/assets/index-10c40100.css">
+    <link rel="stylesheet" href="/goldfishnet/assets/index-15c49973.css">
   </head>
   <body>
-    <header class="header">
-  <nav class="nav">
-    <ul class="nav-list">
-      <li class="nav-item">
-        <a href="./page-2.html" class="nav-link">Page 2</a>
-      </li>
-
-      <li class="nav-item">
-        <a href="./page-3.html" class="nav-link">Page 3</a>
-      </li>
-    </ul>
-  </nav>
-</header>
-
-
-    <section>
-      <h1>Lorem ipsum dolor sit amet.</h1>
-      <!-- Path to images as from index.html file -->
-      <img src="/goldfishnet/assets/javascript-8dac5379.svg" alt="" />
-    </section>
-
-    <!-- Loads the specified .html file -->
-    <section class="vite-promo">
-  <div class="container">
-    <div class="wrapper">
-      <h2 class="title">
-        <span class="gradient">Vite</span>
-      </h2>
-      <p class="text">Next Generation Frontend Tooling</p>
-      <p class="tagline">
-        Get ready for a development environment that can finally catch up with
-        you.
-      </p>
-
-      <ul class="actions">
-        <li class="action">
-          <a
-            class="link"
-            href="https://vitejs.dev/guide/"
-            target="_blank"
-            rel="noopener noreferrer"
-            >Get Started</a
+    <!-- HEADER -->
+<header class="header-section">
+  <div class="header-container container">
+    <!-- <div class=""> -->
+    <a class="logo-link link" href="/" title="GoldFishNet">
+      <svg class="menu-svg" width="60" height="60">
+        <use href="/goldfishnet/assets/logo-87399e12.svg#icon-logo"></use>
+      </svg>
+    </a>
+    <button class="menu-open-btn js-open-menu" type="button">
+      <svg class="burger-icon" width="32" height="32">
+        <use class="" href="/goldfishnet/assets/sprite-1612b77a.svg#icon-bars"></use>
+      </svg>
+    </button>
+    <!-- </div> -->
+    <nav class="menu-container js-menu-container" id="mobile-menu">
+      <ul class="menu list">
+        <li class="menu-item">
+          <a class="menu-link link" href="">
+            <svg class="menu-svg" width="20" height="20">
+              <use href="/goldfishnet/assets/sprite-1612b77a.svg#icon-map-o"></use>
+            </svg>
+            Карта</a
           >
         </li>
-        <li class="action">
-          <a
-            class="link"
-            href="https://github.com/vitejs/vite"
-            target="_blank"
-            rel="noopener noreferrer"
-            >View on GitHub</a
+        <li class="menu-item">
+          <a class="menu-link link" href="">
+            <svg class="menu-svg" width="20" height="20">
+              <use href="/goldfishnet/assets/sprite-1612b77a.svg#icon-quill"></use>
+            </svg>
+            Звіти</a
           >
+        </li>
+        <li class="menu-item">
+          <a class="menu-link link" href="">Риби</a>
+        </li>
+        <li class="menu-item">
+          <a class="menu-link link" href="">Публікації</a>
+        </li>
+        <li class="menu-item">
+          <a class="menu-link link" href="">Чат</a>
+        </li>
+        <li class="menu-item">
+          <a class="menu-link link" href="">Інше</a>
         </li>
       </ul>
-    </div>
 
-    <div class="thumb">
-      <!-- Path to images as from index.html file -->
-      <img
-        class="pic"
-        src="/goldfishnet/assets/vite-logo-51249ca9.png"
-        alt="Vite logo"
-        width="640"
-        height="640"
-      />
-    </div>
+      <ul class="menu-auth list">
+        <li class="menu-auth-item">
+          <a class="menu-auth-link link" href="">
+            <svg class="menu-auth-icon" width="20" height="20">
+              <use href="/goldfishnet/assets/sprite-1612b77a.svg#icon-plus"></use>
+            </svg>
+            Додати водойму</a
+          >
+        </li>
+        <li class="menu-auth-item">
+          <a class="menu-auth-link link" href="">
+            <svg class="menu-auth-icon" width="20" height="20">
+              <use href="/goldfishnet/assets/sprite-1612b77a.svg#icon-plus"></use>
+            </svg>
+            Додати звіт
+          </a>
+        </li>
+        <li class="menu-auth-item">
+          <a class="menu-auth-link link" href="">
+            <svg class="menu-auth-icon" width="20" height="20">
+              <use href="/goldfishnet/assets/sprite-1612b77a.svg#icon-plus"></use>
+            </svg>
+            Додати публікацію
+          </a>
+        </li>
+        <li class="menu-auth-item">
+          <a class="menu-auth-link link" href="">
+            <svg class="menu-auth-icon" width="20" height="20">
+              <use href="/goldfishnet/assets/sprite-1612b77a.svg#icon-enter"></use>
+            </svg>
+            Увійти
+          </a>
+        </li>
+        <li class="menu-auth-item">
+          <a class="menu-auth-link link" href="">
+            <svg class="menu-auth-icon" width="20" height="20">
+              <use href="/goldfishnet/assets/sprite-1612b77a.svg#icon-quill"></use>
+            </svg>
+            Зареєструватися
+          </a>
+        </li>
+      </ul>
+
+      <!-- <div class="menu-auth-wrapper">
+          <form class="form-search" method="GET" action="/search">
+            <input
+              class="form-search-input"
+              name="q"
+              type="search"
+              placeholder="Пошук"
+            />
+            <button class="form-search-btn" type="submit">Пошук</button>
+          </form>
+
+          <div href="" class="show-menu-auth">
+            <svg class="menu-svg" width="20" height="20">
+              <use href="./img/sprite.svg#icon-enter"></use>
+            </svg>
+          </div>
+        </div> -->
+    </nav>
   </div>
-</section>
+</header>
+
+    <!-- MAIN -->
+<main>
+  <div class="main-text-wrapper container">
+    <h1 class="main-text">
+      Інтерактивна супутникова карта місць для рибальства і активного відпочинку
+      в Україні. Звіти з риболовлі. Опис риб і річок України, а також інші
+      публікації на риболовну тематику.
+    </h1>
+  </div>
+  <section class="main-section">
+    <ul class="main-list list">
+      <li class="main-item">
+        <div>
+          <a class="main-title-link link" href="./blog.html">
+            <h2 class="main-title">
+              Вся риба в цій ямі - Рибалка 2023 - Звіти з риболовлі
+            </h2>
+          </a>
+          <div class="subtitle-wrapper">
+            <a class="main-subtitle link" href="">
+              <svg width="14" height="14">
+                <use href="/goldfishnet/assets/card-icon-5837b843.svg#icon-user"></use>
+              </svg>
+              Українська Рибалка</a
+            >
+            <a class="main-subtitle link" href="">
+              <svg width="16" height="16">
+                <use href="/goldfishnet/assets/card-icon-5837b843.svg#icon-map-marker"></use>
+              </svg>
+              Готельно-відпочинковий комплекс "Тартак Резорт"</a
+            >
+          </div>
+          <div class="main-img-wrapper">
+            <a class="main-link" href="./blog.html">
+              <img
+                class="main-img"
+                src="/goldfishnet/assets/img-01-780c103c.jpg"
+                alt="Звіти з риболовлі"
+                width="320"
+                height="180"
+            /></a>
+          </div>
+          <div class="fish-wrapper">
+            <svg width="14" height="14">
+              <use href="/goldfishnet/assets/card-icon-5837b843.svg#icon-tag"></use>
+            </svg>
+            <ul class="fish-list list">
+              <li class="fish-item">
+                <a class="fish-link link" href="">Плотва</a>
+              </li>
+              <li class="fish-item">
+                <a class="fish-link link" href="">Карась</a>
+              </li>
+              <li class="fish-item">
+                <a class="fish-link link" href="">Окунь</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </li>
+      <li class="main-item">
+        <div>
+          <a class="main-title-link link" href="./blog.html">
+            <h2 class="main-title">На карася в селі Русів - Звіти з риб</h2>
+          </a>
+          <div class="subtitle-wrapper">
+            <a class="main-subtitle link" href="">Щоденник рибака </a>
+            <a class="main-subtitle link" href="">Русів</a>
+          </div>
+          <div class="main-img-wrapper">
+            <a class="link" href="./blog.html">
+              <img
+                class="main-img"
+                src="/goldfishnet/assets/img-02-537ff15f.jpg"
+                alt="Звіти з риболовлі"
+                width="320"
+                height="180"
+            /></a>
+          </div>
+          <div class="fish-wrapper">
+            <svg width="14" height="14">
+              <use href="/goldfishnet/assets/card-icon-5837b843.svg#icon-tag"></use>
+            </svg>
+            <ul class="fish-list list">
+              <li class="fish-item">
+                <a class="fish-link link" href="">Плотва</a>
+              </li>
+              <li class="fish-item">
+                <a class="fish-link link" href="">Карась</a>
+              </li>
+              <li class="fish-item">
+                <a class="fish-link link" href="">Окунь</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </li>
+      <li class="main-item">
+        <div>
+          <a class="main-title-link link" href="">
+            <h2 class="main-title">
+              Відірвались по кілограмових карасях та красенях линах. Частина 2 -
+              Звіти з риболовлі
+            </h2></a
+          >
+          <div class="subtitle-wrapper">
+            <a class="main-subtitle link" href="">
+              <svg width="14" height="14">
+                <use href="/goldfishnet/assets/card-icon-5837b843.svg#icon-user"></use>
+              </svg>
+              CarpTeamLviv
+            </a>
+            <a class="main-subtitle link" href=""
+              ><svg width="14" height="14">
+                <use href="/goldfishnet/assets/card-icon-5837b843.svg#icon-map-marker"></use>
+              </svg>
+              Соколвіка (Гадилівський став)</a
+            >
+          </div>
+          <div class="main-img-wrapper">
+            <a class="link" href="./blog.html">
+              <img
+                class="main-img"
+                src="/goldfishnet/assets/img-03-eda97ffd.jpg"
+                alt="Звіти з риболовлі"
+                width="320"
+                height="180"
+            /></a>
+          </div>
+          <div class="options-wrapper">
+            <ul class="options-list list">
+              <li class="options-item">
+                <svg width="14" height="14">
+                  <use href="/goldfishnet/assets/card-icon-5837b843.svg#icon-thumbs-o-up"></use>
+                </svg>
+                0
+              </li>
+              <li class="options-item">
+                <svg width="14" height="14">
+                  <use href="/goldfishnet/assets/card-icon-5837b843.svg#icon-youtube-play"></use>
+                </svg>
+              </li>
+              <li class="options-item">
+                <svg width="14" height="14">
+                  <use href="/goldfishnet/assets/card-icon-5837b843.svg#icon-eye"></use>
+                </svg>
+                300
+              </li>
+              <li class="options-item">
+                <svg width="14" height="14">
+                  <use href="/goldfishnet/assets/card-icon-5837b843.svg#icon-comment"></use>
+                </svg>
+                0
+              </li>
+              <li class="options-item">
+                <svg width="14" height="14">
+                  <use href="/goldfishnet/assets/card-icon-5837b843.svg#icon-calendar"></use>
+                </svg>
+                <span> 2021-06-13</span>
+              </li>
+            </ul>
+          </div>
+          <div class="fish-wrapper">
+            <svg width="14" height="14">
+              <use href="/goldfishnet/assets/card-icon-5837b843.svg#icon-tag"></use>
+            </svg>
+            <ul class="fish-list list">
+              <li class="fish-item">
+                <a class="fish-link link" href="">Плотва</a>
+              </li>
+              <li class="fish-item">
+                <a class="fish-link link" href="">Карась</a>
+              </li>
+              <li class="fish-item">
+                <a class="fish-link link" href="">Окунь</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </li>
+      <li class="main-item">
+        <div>
+          <a class="main-title-link link" href="">
+            <h2 class="main-title">
+              Тернопільські динозаври. Ловля лящів на Тернопільському ставку -
+              Звіти з риболовлі
+            </h2></a
+          >
+          <div class="subtitle-wrapper">
+            <a class="main-subtitle link" href="">Українська Рибалка </a>
+            <a class="main-subtitle link" href="">Тернопільський став</a>
+          </div>
+          <div class="main-img-wrapper">
+            <a class="link" href="./blog.html">
+              <img
+                class="main-img"
+                src="/goldfishnet/assets/img-04-91437166.jpg"
+                alt="Звіти з риболовлі"
+                width="320"
+                height="180"
+            /></a>
+          </div>
+          <div class="fish-wrapper">
+            <svg width="14" height="14">
+              <use href="/goldfishnet/assets/card-icon-5837b843.svg#icon-tag"></use>
+            </svg>
+            <ul class="fish-list list">
+              <li class="fish-item">
+                <a class="fish-link link" href="">Плотва</a>
+              </li>
+              <li class="fish-item">
+                <a class="fish-link link" href="">Карась</a>
+              </li>
+              <li class="fish-item">
+                <a class="fish-link link" href="">Окунь</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </li>
+      <li class="main-item">
+        <div>
+          <a class="main-title-link link" href="">
+            <h2 class="main-title">
+              Розрив по щуці на озері Barracuda - Звіти з риболовлі
+            </h2></a
+          >
+          <div class="subtitle-wrapper">
+            <a class="main-subtitle link" href="">ProFeeder </a>
+            <a class="main-subtitle link" href="">Івашківці (Barracuda)</a>
+          </div>
+          <div class="main-img-wrapper">
+            <img
+              class="main-img"
+              src="/goldfishnet/assets/img-05-37a68fd3.jpg"
+              alt="Звіти з риболовлі"
+              width="320"
+              height="180"
+            />
+          </div>
+          <div class="fish-wrapper">
+            <svg width="14" height="14">
+              <use href="/goldfishnet/assets/card-icon-5837b843.svg#icon-tag"></use>
+            </svg>
+            <ul class="fish-list list">
+              <li class="fish-item">
+                <a class="fish-link link" href="">Плотва</a>
+              </li>
+              <li class="fish-item">
+                <a class="fish-link link" href="">Карась</a>
+              </li>
+              <li class="fish-item">
+                <a class="fish-link link" href="">Окунь</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </li>
+      <li class="main-item">
+        <div>
+          <a class="main-title-link link" href="">
+            <h2 class="main-title">
+              Кубок міста Винники 2021 у селі Пристань - Звіти з риболовлі
+            </h2></a
+          >
+          <div class="subtitle-wrapper">
+            <a class="main-subtitle link" href="">4FISHING </a>
+            <a class="main-subtitle link" href="">Пристань</a>
+          </div>
+          <div class="main-img-wrapper">
+            <img
+              class="main-img"
+              src="/goldfishnet/assets/img-06-417fc44e.jpg"
+              alt="Звіти з риболовлі"
+              width="320"
+              height="180"
+            />
+          </div>
+          <div class="fish-wrapper">
+            <svg width="14" height="14">
+              <use href="/goldfishnet/assets/card-icon-5837b843.svg#icon-tag"></use>
+            </svg>
+            <ul class="fish-list list">
+              <li class="fish-item">
+                <a class="fish-link link" href="">Плотва</a>
+              </li>
+              <li class="fish-item">
+                <a class="fish-link link" href="">Карась</a>
+              </li>
+              <li class="fish-item">
+                <a class="fish-link link" href="">Окунь</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </li>
+      <li class="main-item">
+        <div>
+          <a class="main-title-link link" href="">
+            <h2 class="main-title">
+              Риболовля на гарному озері біля села Пилява - Звіти з риболовлі
+            </h2></a
+          >
+          <div class="subtitle-wrapper">
+            <a class="main-subtitle link" href="">ШУРШИМ </a>
+            <a class="main-subtitle link" href="">Пилява</a>
+          </div>
+          <div class="main-img-wrapper">
+            <img
+              class="main-img"
+              src="/goldfishnet/assets/img-07-59de0ad5.jpg"
+              alt="Звіти з риболовлі"
+              width="320"
+              height="180"
+            />
+          </div>
+          <div class="fish-wrapper">
+            <svg width="14" height="14">
+              <use href="/goldfishnet/assets/card-icon-5837b843.svg#icon-tag"></use>
+            </svg>
+            <ul class="fish-list list">
+              <li class="fish-item">
+                <a class="fish-link link" href="">Плотва</a>
+              </li>
+              <li class="fish-item">
+                <a class="fish-link link" href="">Карась</a>
+              </li>
+              <li class="fish-item">
+                <a class="fish-link link" href="">Окунь</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </li>
+      <li class="main-item">
+        <div>
+          <a class="main-title-link link" href="">
+            <h2 class="main-title">
+              Фідерна рибалка на ляща - Звіти з риболовлі
+            </h2></a
+          >
+          <div class="subtitle-wrapper">
+            <a class="main-subtitle link" href="">Українська Рибалка </a>
+            <a class="main-subtitle link" href=""
+              >Доброгостівське водосховище</a
+            >
+          </div>
+          <div class="main-img-wrapper">
+            <img
+              class="main-img"
+              src="/goldfishnet/assets/img-08-1514d040.jpg"
+              alt="Звіти з риболовлі"
+              width="320"
+              height="180"
+            />
+          </div>
+          <div class="fish-wrapper">
+            <svg width="14" height="14">
+              <use href="/goldfishnet/assets/card-icon-5837b843.svg#icon-tag"></use>
+            </svg>
+            <ul class="fish-list list">
+              <li class="fish-item">
+                <a class="fish-link link" href="">Плотва</a>
+              </li>
+              <li class="fish-item">
+                <a class="fish-link link" href="">Карась</a>
+              </li>
+              <li class="fish-item">
+                <a class="fish-link link" href="">Окунь</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </li>
+      <li class="main-item">
+        <div>
+          <a class="main-title-link link" href="">
+            <h2 class="main-title">
+              Окуні монстри існують і вони живуть в Херсоні! Delta bass - серія
+              1 - Звіти з риболовлі
+            </h2></a
+          >
+          <div class="subtitle-wrapper">
+            <a class="main-subtitle link" href="">Катя Рибалка </a>
+            <a class="main-subtitle link" href=""
+              >Комплекс рибалки та відпочинку "Дельта Дн</a
+            >
+          </div>
+          <div class="main-img-wrapper">
+            <img
+              class="main-img"
+              src="/goldfishnet/assets/img-09-3a4bb205.jpg"
+              alt="Звіти з риболовлі"
+              width="320"
+              height="180"
+            />
+          </div>
+          <div class="fish-wrapper">
+            <svg width="14" height="14">
+              <use href="/goldfishnet/assets/card-icon-5837b843.svg#icon-tag"></use>
+            </svg>
+            <ul class="fish-list list">
+              <li class="fish-item">
+                <a class="fish-link link" href="">Плотва</a>
+              </li>
+              <li class="fish-item">
+                <a class="fish-link link" href="">Карась</a>
+              </li>
+              <li class="fish-item">
+                <a class="fish-link link" href="">Окунь</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </li>
+      <li class="main-item">
+        <div>
+          <a class="main-title-link link" href="">
+            <h2 class="main-title">
+              Як зловити дикого сазана на Дністрі - Звіти з риболовлі
+            </h2></a
+          >
+          <div class="subtitle-wrapper">
+            <a class="main-subtitle link" href="">Катя Рибалка </a>
+            <a class="main-subtitle link" href="">Маяки (р. Дністер)</a>
+          </div>
+          <div class="main-img-wrapper">
+            <img
+              class="main-img"
+              src="/goldfishnet/assets/img-10-f3f80dbe.jpg"
+              alt="Звіти з риболовлі"
+              width="320"
+              height="180"
+            />
+          </div>
+          <div class="fish-wrapper">
+            <svg width="14" height="14">
+              <use href="/goldfishnet/assets/card-icon-5837b843.svg#icon-tag"></use>
+            </svg>
+            <ul class="fish-list list">
+              <li class="fish-item">
+                <a class="fish-link link" href="">Плотва</a>
+              </li>
+              <li class="fish-item">
+                <a class="fish-link link" href="">Карась</a>
+              </li>
+              <li class="fish-item">
+                <a class="fish-link link" href="">Окунь</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </li>
+      <li class="main-item">
+        <div>
+          <a class="main-title-link link" href="">
+            <h2 class="main-title">
+              Полювання на монстрів 8 - Мар'ївка - Звіти з риболовлі
+            </h2></a
+          >
+          <div class="subtitle-wrapper">
+            <a class="main-subtitle link" href="">Катя Рибалка </a>
+            <a class="main-subtitle link" href="">Мар'ївське водосховище</a>
+          </div>
+          <div class="main-img-wrapper">
+            <img
+              class="main-img"
+              src="/goldfishnet/assets/img-11-a2210a6c.jpg"
+              alt="Звіти з риболовлі"
+              width="320"
+            />
+          </div>
+          <div class="fish-wrapper">
+            <svg width="14" height="14">
+              <use href="/goldfishnet/assets/card-icon-5837b843.svg#icon-tag"></use>
+            </svg>
+            <ul class="fish-list list">
+              <li class="fish-item">
+                <a class="fish-link link" href="">Плотва</a>
+              </li>
+              <li class="fish-item">
+                <a class="fish-link link" href="">Карась</a>
+              </li>
+              <li class="fish-item">
+                <a class="fish-link link" href="">Окунь</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </li>
+      <li class="main-item">
+        <div>
+          <a class="main-title-link link" href="">
+            <h2 class="main-title">
+              TYHE PLESO ( ТИХЕ ПЛЕСО) с.Велике Колодно - Риболовна карта
+            </h2></a
+          >
+          <div class="subtitle-wrapper">
+            <a class="main-subtitle link" href="">Львівська область </a>
+            <a class="main-subtitle link" href="">Західний Буг</a>
+          </div>
+          <div class="main-img-wrapper">
+            <img
+              class="main-img"
+              src="/goldfishnet/assets/img-12-f2908ef7.jpg"
+              alt="Звіти з риболовлі"
+              width="320"
+              height="180"
+            />
+          </div>
+          <div class="fish-wrapper">
+            <svg width="14" height="14">
+              <use href="/goldfishnet/assets/card-icon-5837b843.svg#icon-tag"></use>
+            </svg>
+            <ul class="fish-list list">
+              <li class="fish-item">
+                <a class="fish-link link" href="">Плотва</a>
+              </li>
+              <li class="fish-item">
+                <a class="fish-link link" href="">Карась</a>
+              </li>
+              <li class="fish-item">
+                <a class="fish-link link" href="">Окунь</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </section>
+
+  <!-- <nav class="main-pagination container">
+        <ul class="pagination">
+          <li class="page-item disabled"><span class="page-link"> « </span></li>
+          <li class="page-item active"><a class="page-link" href="">1</a></li>
+          <li class="page-item"><a class="page-link" href="/?page=2">2</a></li>
+          <li class="page-item"><a class="page-link" href="/?page=3">3</a></li>
+          <li class="page-item"><a class="page-link" href="/?page=4">4</a></li>
+          <li class="page-item"><a class="page-link" href="/?page=5">5</a></li>
+          <li class="page-item disabled"><span class="page-link">...</span></li>
+          <li class="page-item">
+            <a class="page-link" href="/?page=392">392</a>
+          </li>
+          <li class="page-item">
+            <a class="page-link" href="/?page=393">393</a>
+          </li>
+          <li class="page-item">
+            <a class="page-link" href="/?page=2" aria-label="Next"
+              ><span aria-hidden="true">»</span></a
+            >
+          </li>
+        </ul>
+      </nav> -->
+</main>
+
+    <!-- FOOTER -->
+<footer class="footer-section">
+  <div class="footer-container container">
+    <ul class="footer-social list">
+      <li class="footer-social-item">
+        <a class="footer-social-link link" href="">
+          <svg class="footer-social-svg" width="32" height="32">
+            <use href="/goldfishnet/assets/sprite-1612b77a.svg#instagram"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="footer-social-item">
+        <a class="footer-social-link link" href="">
+          <svg class="footer-social-svg" width="32" height="32">
+            <use href="/goldfishnet/assets/sprite-1612b77a.svg#facebook"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="footer-social-item">
+        <a class="footer-social-link link" href="">
+          <svg class="footer-social-svg" width="32" height="32">
+            <use href="/goldfishnet/assets/sprite-1612b77a.svg#icon-paper-plane"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="footer-social-item">
+        <a class="footer-social-link link" href="">
+          <svg class="footer-social-svg" width="32" height="32">
+            <use href="/goldfishnet/assets/sprite-1612b77a.svg#vk"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="footer-social-item">
+        <a class="footer-social-link link" href="">
+          <svg class="footer-social-svg" width="32" height="32">
+            <use href="/goldfishnet/assets/sprite-1612b77a.svg#youtube"></use>
+          </svg>
+        </a>
+      </li>
+    </ul>
+
+    <p class="footer-copirate">GoldFіshNet © 2023</p>
+
+    <ul class="footer-links list">
+      <li footer-links-item>
+        <a class="footer-links-link link" href="">Блог</a>
+      </li>
+      <li footer-links-item>
+        <a class="footer-links-link link" href="">Риболовна карта</a>
+      </li>
+      <li footer-links-item>
+        <a class="footer-links-link link" href="">Довідник рибалки</a>
+      </li>
+      <li footer-links-item>
+        <a class="footer-links-link link" href="">Політика конфіденційності</a>
+      </li>
+    </ul>
+
+    <ul class="footer-links list">
+      <li footer-links-item>
+        <a class="footer-links-link link" href="">Річки</a>
+      </li>
+      <li footer-links-item>
+        <a class="footer-links-link link" href="">Види риб </a>
+      </li>
+      <li footer-links-item>
+        <a class="footer-links-link link" href="">Публікації </a>
+      </li>
+      <li footer-links-item>
+        <a class="footer-links-link link" href="">Телеграм бот</a>
+      </li>
+    </ul>
+  </div>
+</footer>
 
 
     
+    <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>
