@@ -8,14 +8,14 @@
     "build": "vite build --base=/goldfishnet/",
     "preview": "vite preview"
   },
-  "devDependencies": {
-    "vite": "^4.0.0",
-    "glob": "^8.1.0"
-  },
   "author": "Oleh Luzhniak <oleg.luzhnyak@gmail.com>",
   "license": "ISC",
   "dependencies": {
-    "vite-plugin-full-reload": "^1.0.5",
-    "vite-plugin-html-inject": "^1.0.1"
+    "glob": "^11.0.1",
+    "vite": "^4.5.9"
+  },
+  "devDependencies": {
+    "vite-plugin-full-reload": "^1.2.0",
+    "vite-plugin-html-inject": "^1.1.2"
   }
 }
