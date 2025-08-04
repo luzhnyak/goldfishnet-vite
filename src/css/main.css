@@ -113,6 +113,7 @@
 
 .main-subtitle {
   width: 150px;
+  margin-bottom: 4px;
   display: flex;
   justify-content: start;
   align-items: center;
@@ -170,9 +171,20 @@
 }
 
 .fish-wrapper {
+  height: 20px;
+  margin-top: 4px;
   display: flex;
-  /* justify-content: space-between; */
+  justify-content: start;
   align-items: center;
+  gap: 4px;
+}
+
+.fish-wrapper svg {
+  fill: currentColor;
+  margin: 0;
+  flex-shrink: 0;
+  width: 14px;
+  height: 14px;
 }
 
 .fish-link {
